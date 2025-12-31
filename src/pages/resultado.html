@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPIAL-26 | Reulsts</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/resultado.css">
+    <link rel="shortcut icon" href="../assets/img/favicon1.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="dp-flex-row">
+        <div class="nav dp-flex-row">
+            <div id="title">
+                <h1 style="display: flex; gap: .3em; justify-content: center; align-items: center;">
+                    <a href="./index.html"><img src="../assets/img/favicon1.png" alt="Logo do IPIAL" width="50px"
+                            height="40px"></a>
+                    <a href="./index.html">IPIAL-26</a>
+                </h1>
+            </div>
+            <div id="link">
+                <nav id="links">
+                    <a href="../../index.html">Home</a>
+                    <a href="./resultado.html">Meu Resultado</a>
+                    <a href="./login.html">Cadastro</a>
+                </nav>
+            </div>
+            <div id="burguer"><button id="boto">ola</button></div>
+        </div>
+    </header>
+
+    <main class="container dp-flex-row">
+
+        <!-- search section -->
+        <section class="search-section">
+
+            <div class="search-container dp-flex-row">
+                <div class="search-title searchItem">
+                    <h1>Resultado da Candidatura</h1>
+                    <p>Consulte o seu resultado para saber se foi aprovado no para fazer exame no IPIAL</p>
+                </div>
+
+                <form class="searchItem dp-flex-row">
+                    <input type="text" name="usercode" id="usercode" class="search-input"
+                        placeholder="Insira o seu código de acesso">
+
+                    <button type="submit" class="linkButton">Pesquisar</button>
+                </form>
+            </div>
+
+        </section>
+        <!-- search section -->
+
+        <!-- Courses Section -->
+        <section class="section dp-flex-row">
+            <div class="result-section">
+                <div class="course-title">
+                    <h1>Resultado</h1>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Nº de BI</th>
+                            <th>Curso</th>
+                            <th>Média</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td id="name">Daniel Tati</td>
+                        <td id="idNumber">4444444444</td>
+                        <td id="curso">Informática</td>
+                        <td id="media">19</td>
+                        <td id="status">Aprovado</td>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+        <!-- Courses Section -->
+
+        <!-- Animated Logo -->
+        <section class="section dp-flex-row">
+            <div class="logo-bottom">
+                <img src="../assets/img/logo_ipial.png" alt="Imagem da logo do Alda Lara">
+                <!-- Mexe aqui Pimenta -->
+            </div>
+        </section>
+        <!-- Animated Logo -->
+
+    </main>
+
+    <script src="./src/javascript/script.js"></script>
+</body>
+
+</html>
