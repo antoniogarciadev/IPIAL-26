@@ -5,12 +5,14 @@
   padding: 0;
   color: #fff;
   text-align: justify;
+  list-style: none;
 }
 
 :root {
   --clr-primary: #4523e0;
   --clr-primary-hover: #250a9e;
   --clr-secondary: #050379;
+  --clr-secondary-back: #01011b;
   --max-height-section: 700px;
   --h1-second: 20pt;
 }
@@ -31,8 +33,11 @@ html {
 body {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   /* background-image: linear-gradient(12deg, yellow, pink); */
   background: #fff;
+  position: relative;
 }
 
 /* Header */
@@ -608,6 +613,107 @@ p {
 }
 
 /* Fim Main */
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 350px;
+  background: var(--clr-secondary-back);
+  margin-top: 1790px;
+  display: flex;
+  position: relative;
+}
+
+.line-full {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1366px;
+  max-height: var(--max-height-section);
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.footer-content-first {
+  display: flex;
+  gap: 10px;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.footer-contens {
+  /* border-top: solid 2px #fff; */
+  display: grid;
+  padding-top: 1.3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.footer-content h1 {
+  font-size: 20pt;
+  font-weight: 100;
+}
+
+.icones {
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation {
+  align-items: center;
+}
+
+.navigation  ul {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.navigation  ul li a{
+  transition: all .5s;
+  &:hover {
+    color: #4523e0;
+  }
+}
+
+.footer-content-about {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.about-content-aling {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.footer-content-about li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+/* Fim footer */
 
 /* Form */
 .login {
