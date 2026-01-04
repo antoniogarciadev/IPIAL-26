@@ -15,9 +15,9 @@
         <div class="nav dp-flex-row">
             <div id="title">
                 <h1 style="display: flex; gap: .3em; justify-content: center; align-items: center;">
-                    <a href="./index.html"><img src="../assets/img/favicon1.png" alt="Logo do IPIAL" width="50px"
+                    <a href="../../index.html"><img src="../assets/img/favicon1.png" alt="Logo do IPIAL" width="50px"
                             height="40px"></a>
-                    <a href="./index.html">IPIAL-26</a>
+                    <a href="../../index.html">IPIAL-26</a>
                 </h1>
             </div>
             <div id="link">
@@ -46,7 +46,7 @@
                     <input type="text" name="usercode" id="usercode" class="search-input"
                         placeholder="Insira o seu código de acesso">
 
-                    <button type="submit" class="linkButton">Pesquisar</button>
+                    <button id="btnsub" type="button" class="linkButton">Pesquisar</button>
                 </form>
             </div>
 
@@ -54,7 +54,7 @@
         <!-- search section -->
 
         <!-- Courses Section -->
-        <section class="section dp-flex-row">
+        <section class="section dp-flex-row" id="table">
             <div class="result-section">
                 <div class="course-title">
                     <h1>Resultado</h1>
@@ -64,18 +64,18 @@
                     <thead>
                         <tr>
                             <th>Nome</th>
-                            <th>Nº de BI</th>
+                            <th>Nº do BI</th>
                             <th>Curso</th>
                             <th>Média</th>
                             <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <td id="name">Daniel Tati</td>
-                        <td id="idNumber">4444444444</td>
-                        <td id="curso">Informática</td>
-                        <td id="media">19</td>
-                        <td id="status">Aprovado</td>
+                        <td id="name"></td>
+                        <td id="userId"></td>
+                        <td id="course"></td>
+                        <td id="media"></td>
+                        <td id="status"></td>
                     </tbody>
                 </table>
             </div>
@@ -84,17 +84,78 @@
         <!-- Courses Section -->
 
         <!-- Animated Logo -->
-        <section class="section dp-flex-row">
+        <section class="section-logo dp-flex-row">
             <div class="logo-bottom">
                 <img src="../assets/img/logo_ipial.png" alt="Imagem da logo do Alda Lara">
                 <!-- Mexe aqui Pimenta -->
             </div>
         </section>
         <!-- Animated Logo -->
-
     </main>
 
+    <footer>
+
+        <div class="line-full"></div>
+
+        <div class="footer-container">
+
+            <a class="footer-content-first" href="../../index.html">
+                <h2>IPIAL-26</h2>
+                <div>
+                    <img src="../assets/img/favicon1.png" alt="Logo IPIAL" width="70px">
+                </div>
+            </a>
+
+            <div class="footer-contens">
+                <!-- redes sociais -->
+                <div class="footer-content ">
+                    <h1>Siga-nos</h1>
+
+                    <div class="icones">
+                        <li>
+                            <img src="../assets/img/whatzapp-icon.png" alt="whatzapp-icon" width="40px" />
+                        </li>
+                        <li>
+                            <img src="../assets/img/facebook-icon.png" alt="facebook-icon" width="40px" />
+                        </li>
+                        <li>
+                            <img src="../assets/img/linkedlin-icon.png" alt="linkedlin-icon" width="40px" />
+                        </li>
+                    </div>
+                </div>
+                <div class="footer-content navigation">
+                    <ul>
+                        <h1>Atalhos</h1>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="./resultado.html">Resultdo</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./login.html">Cadastrar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content  footer-content-about">
+                    <div class="about-content-aling">
+                        <li>
+                            <img src="../assets/img/location-icon-2.png" alt="location-icon" width="16px" />
+                            <p>Angola Luanda, Maianga</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/phone-caling-icon.png" alt="phone-icon" width="20px" />
+                            <p>(+244) 933 344 900</p>
+                        </li>
+                        <li>
+                            <img src="../assets/img/email-icon.png" alt="email-icon" width="24px" />
+                            <p>geral_ipial26@ipial.edu.com</p>
+                        </li>
+                        <p>&copy; IPIAL-26 2026 - all rights reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
     <script src="./src/javascript/script.js"></script>
+    <script src="../javascript/userdata.js"></script>
 </body>
 
 </html>
