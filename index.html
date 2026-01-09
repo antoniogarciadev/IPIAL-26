@@ -5,24 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPIAL-26 | Home</title>
-    <link rel="stylesheet" href="src/global/header.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
     <link rel="shortcut icon" href="./src/assets/img/favicon1.png" type="image/x-icon">
     <link rel="shortcut icon" href="asset/img/icon/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/global/global.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 
 <body>
-   <header>
-                <h1>
-                    <a  href="./index.html"><img src="./src/assets/img/favicon1.png" alt="Logo do IPIAL" width="50px" height="40px"></a>
-                    <a href="./index.html">IPIAL-26</a>
-                </h1>
-                <nav id="links">
-                    <a href="./index.html">Home</a>
-                    <a href="./src/pages/resultado.html">Meu Resultado</a>
-                    <a href="./src/pages/login.html">Cadastro</a>
-                </nav>
-            <div id="burguer"><button id="boto">ola</button></div>
+    <header>
+        <div class="img-logo">
+            <a href="./index.html">
+                <img src="../src/assets/img/favicon1.png" alt="Logo do IPIAL" width="50px" height="40px">
+            </a>
+            <a href="./index.html">IPIAL-26</a>
+        </div>
+
+        <nav id="links">
+            <a href="./index.html">Home</a>
+            <a href="./src/pages/resultado.html">Meu Resultado</a>
+            <a href="./src/pages/cadastro.html">Cadastro</a>
+            <a href="./src/pages/login.html">Login</a>
+        </nav>
+
+        <div id="burguer">
+            <button id="boto">
+                <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" />
+                </svg>
+            </button>
+        </div>
     </header>
 
     <main class="container dp-flex-row">
@@ -53,7 +64,7 @@
         <!-- Courses Section -->
         <section class="section forPhone dp-flex-row">
             <div class="course-title dp-flex-row">
-                <h1>Nossos Curos Disponiveis</h1>
+                <h1>Nossos Cursos Disponíveis</h1>
             </div>
 
             <div class="course-container ">
@@ -86,7 +97,6 @@
             <div class="about dp-flex-row">
                 <h1>Instituto Politécnico Industrial Alda Lara - IPIAL</h1>
 
-
                 <p>
                     <strong>O Instituto Politécnico Alda Lara</strong> é uma escola de ensino médio-técnico
                     angolana, localizada no municipio de Ingombota, na província de Luanda.
@@ -101,7 +111,8 @@
                     técnicas, científicas e humanísticas, o instituto busca equipar os alunos com habilidades práticas e
                     conhecimentos teóricos sólidos.</p>
 
-                <p>O nome <strong>Alda Lara</strong> é uma homenagem referida a escritora angolana Alda  Ferreira Pires Barreto de Lara Albuquerque que também
+                <p>O nome <strong>Alda Lara</strong> é uma homenagem referida a escritora angolana Alda Ferreira Pires
+                    Barreto de Lara Albuquerque que também
                     foi uma das grandes
                     ativistas pela independência do país. É uma da maiores escolas do País.</p>
 
@@ -127,10 +138,9 @@
         <!-- About section -->
 
         <!-- Animated Logo -->
-        <section class="section-logo dp-flex-row">
+        <section class="section-logo">
             <div class="logo-bottom">
                 <img src="./src/assets/img/logo_ipial.png" alt="Imagem da logo do Alda Lara">
-                <!-- Mexe aqui Pimenta -->
             </div>
         </section>
         <!-- Animated Logo -->
@@ -143,10 +153,10 @@
         <div class="footer-container">
 
             <a class="footer-content-first" href="./index.html">
-                <h2>IPIAL-26</h2>
                 <div>
                     <img src="./src/assets/img/favicon1.png" alt="" width="70px">
                 </div>
+                <h2>IPIAL-26</h2>
             </a>
 
             <div class="footer-contens">
@@ -170,7 +180,7 @@
                     <ul>
                         <h1>Atalhos</h1>
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./src/pages/resultado.html">Resultdo</a></li>
+                        <li><a href="./src/pages/resultado.html">Resultado</a></li>
                         <li><a href="./src/pages/login.html">Login</a></li>
                         <li><a href="./src/pages/login.html">Cadastrar</a></li>
                     </ul>
@@ -190,7 +200,7 @@
                             <img src="./src/assets/img/email-icon.png" alt="email-icon" width="24px" />
                             <p>geral_ipial26@ipial.edu.com</p>
                         </li>
-                        <p>&copy; IPIAL-26 2026 - all rights reserved</p>
+                        <div>&copy; Copyright 2026 IPIAL-26</div>
                     </div>
                 </div>
             </div>
